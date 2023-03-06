@@ -1,4 +1,5 @@
-  CreateAccount=()=>{
+var form = document.querySelector('#form'); 
+CreateAccount=()=>{
     form.addEventListener("submit", e => {
       e.preventDefault();
       fetch(form.action, {
