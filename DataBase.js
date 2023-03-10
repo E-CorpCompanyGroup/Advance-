@@ -9,6 +9,7 @@ SendData=()=>{
             response => response.json()
         ).then((html) => {
           User();
+            console.log('Data Sent');
         });
       });
 }
