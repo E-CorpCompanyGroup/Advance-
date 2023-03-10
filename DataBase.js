@@ -8,14 +8,7 @@ SendData=()=>{
         }).then(
             response => response.json()
         ).then((html) => {
-          if (User.length>=1&&Mail.length>=1&&Code.length>=1) {
-              localStorage.setItem('NiberUser',User);
-              localStorage.setItem('NiberMail',Mail);
-              localStorage.setItem('NiberPassword',Code);  
-              Login.style.display="none"; 
-          }else{
-              return false;
-          }
+          User();
         });
       });
 }
